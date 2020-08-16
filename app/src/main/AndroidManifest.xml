@@ -16,12 +16,10 @@
             android:name="com.naver.maps.map.CLIENT_ID"
             android:value="y2018cv8fp" />
 
-        <activity
-            android:name=".MapsNaverActivity">
-        </activity>
+       
 
         <activity android:name=".ListActivity"></activity>
-        <activity android:name=".PostActivity">
+        <activity android:name=".MapsNaverActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

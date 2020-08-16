@@ -12,6 +12,8 @@ import com.naver.maps.map.NaverMap;
 import com.naver.maps.map.OnMapReadyCallback;
 import com.naver.maps.map.overlay.Marker;
 
+
+
 public class MapsNaverActivity extends Activity implements OnMapReadyCallback {
 
     private MapView mapView;
@@ -29,5 +31,9 @@ public class MapsNaverActivity extends Activity implements OnMapReadyCallback {
         Marker marker = new Marker();
         marker.setPosition(new LatLng(37.221890, 127.186652));
         marker.setMap(naverMap);
+
+
     }
+
+
 }
