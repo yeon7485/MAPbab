@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "683874716541",
+    "firebase_url": "https://mapbab-22e1d.firebaseio.com",
+    "project_id": "mapbab-22e1d",
+    "storage_bucket": "mapbab-22e1d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:683874716541:android:91a57d0adbd98fdf031a14",
+        "android_client_info": {
+          "package_name": "com.kplo.mapbab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "683874716541-2lcevv7p0ne271365ctgc80u2njbl060.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kplo.mapbab",
+            "certificate_hash": "1c51c8fb0923fa3d90322ee10ffa0801ac3a503b"
+          }
+        },
+        {
+          "client_id": "683874716541-93mb3ls30r30g1fucducbareidvstd3d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCS7QcCtzGIa3SxZUqxzrmpy5qtK62ObXs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "683874716541-93mb3ls30r30g1fucducbareidvstd3d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
