@@ -1,6 +1,7 @@
 package com.kplo.mapbab;
 
 import android.content.Context;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,10 +27,12 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.MyViewHolder> 
         public TextView TextView_msg;
         public ImageView ImageView_profile;
         public View rootView;
+        public LinearLayout LinearLayout_main;
         public MyViewHolder(View v) {
             super(v);
             TextView_nickname = v.findViewById(R.id.TextView_nickname);
             TextView_msg = v.findViewById(R.id.TextView_msg);
+            LinearLayout_main = v.findViewById(R.id.LinearLayout_main);
             rootView=v;
 
 
@@ -67,11 +70,13 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.MyViewHolder> 
             holder.TextView_msg.setTextAlignment(View.TEXT_ALIGNMENT_VIEW_END);
             holder.TextView_nickname.setTextAlignment(View.TEXT_ALIGNMENT_TEXT_END);
             holder.TextView_msg.setBackgroundResource(R.drawable.rightbubble);
+            holder.LinearLayout_main.setGravity(Gravity.RIGHT);
         }
         else{
             holder.TextView_msg.setTextAlignment(View.TEXT_ALIGNMENT_TEXT_START);
             holder.TextView_nickname.setTextAlignment(View.TEXT_ALIGNMENT_TEXT_START);
             holder.TextView_msg.setBackgroundResource(R.drawable.leftbubble);
+            holder.LinearLayout_main.setGravity(Gravity.LEFT);
         }
 
 

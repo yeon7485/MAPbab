@@ -26,7 +26,7 @@ public class ChatActivity extends AppCompatActivity {
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager layoutManager;
     private List<ChatData> chatList;
-    private String nick = "nick2";
+    private String nick = "nick1";
 
     private EditText EditText_chat;
     private Button Button_send;
@@ -50,6 +50,7 @@ public class ChatActivity extends AppCompatActivity {
                     chat.setMsg(msg);
                     myRef.push().setValue(chat);
                 }
+                EditText_chat.setText("");
             }
         });
 
@@ -72,6 +73,7 @@ public class ChatActivity extends AppCompatActivity {
             public void onChildAdded(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
                 ChatData chat = snapshot. getValue(ChatData.class);
                 ((ChatAdapter) mAdapter).addChat(chat);
+                recyclerView.scrollToPosition(chatList.size()-1);
 
             }
 
