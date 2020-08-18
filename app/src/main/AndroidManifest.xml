@@ -21,7 +21,7 @@
 
         <activity android:name=".PostViewActivity"></activity>
         <activity android:name=".NewPostActivity"></activity>
-        <activity android:name=".ListActivity">
+        <activity android:name=".MapsNaverActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
