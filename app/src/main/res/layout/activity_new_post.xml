@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="15dp"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,6 +19,7 @@
             android:layout_marginRight="15dp"
             android:background="@null"
             android:hint="제목"
+            android:privateImeOptions="defaultInputmode=korean"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -105,6 +106,7 @@
             android:id="@+id/post_place_et"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:privateImeOptions="defaultInputmode=korean"
             android:textSize="20sp" />
 
     </LinearLayout>
@@ -152,6 +154,7 @@
             android:layout_gravity="center_vertical"
             android:background="@null"
             android:hint="여기를 눌러서 내용을 작성할 수 있습니다."
+            android:privateImeOptions="defaultInputmode=korean"
             android:textSize="17sp" />
 
     </LinearLayout>
