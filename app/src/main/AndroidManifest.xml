@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.kplo.mapbab">
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -9,9 +10,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCTtEC39s9JafYXxKz2pxjH5N0LsPZHRRY" />
+        <meta-data
+            android:name="com.naver.maps.map.CLIENT_ID"
+            android:value="y2018cv8fp" />
+
+
         <activity android:name=".PostViewActivity"></activity>
         <activity android:name=".NewPostActivity"></activity>
-        <activity android:name=".ListActivity">
+        <activity android:name=".MapsNaverActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
