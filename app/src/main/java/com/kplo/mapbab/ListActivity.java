@@ -61,9 +61,23 @@ public class ListActivity extends AppCompatActivity implements View.OnClickListe
                     int position = rv.getChildAdapterPosition(child);
 
                     //해당 위치의 Data를 가져옴
-                    Post currentPost = mDatas.get(position);
+                    if(position != RecyclerView.NO_POSITION){
+                        Post currentPost = mDatas.get(position);
 
-                    Toast.makeText(ListActivity.this, "현재 터치한 Item의 Student Name은 " + currentPost.getTitle(), Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(rv.getContext(), PostViewActivity.class);
+                        intent.putExtra("title", currentPost.getTitle());
+                        intent.putExtra("date", currentPost.getDate());
+                        intent.putExtra("time", currentPost.getTime());
+                        intent.putExtra("place", currentPost.getPlace());
+                        intent.putExtra("count", currentPost.getCount());
+                        intent.putExtra("contents", currentPost.getContents());
+
+                        startActivity(intent);
+
+
+                        Toast.makeText(ListActivity.this, "현재 터치한 Item의 Title은 " + currentPost.getTitle(), Toast.LENGTH_SHORT).show();
+                    }
+
                     return true;
                 }
 

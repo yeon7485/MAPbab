@@ -64,4 +64,48 @@
         android:textSize="20sp"
         tools:text="contents" />
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/post_modify_fad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="160dp"
+            android:backgroundTint="#ffffff"
+            android:elevation="6dp"
+            android:src="@drawable/ic_modify"
+            android:visibility="invisible"
+            app:borderWidth="0dp"
+            app:pressedTranslationZ="12dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/post_delete_fad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="90dp"
+            android:backgroundTint="#ffffff"
+            android:elevation="6dp"
+            android:src="@drawable/ic_delete"
+            android:visibility="invisible"
+            app:borderWidth="0dp"
+            app:pressedTranslationZ="12dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/post_edit_fad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="15dp"
+            android:backgroundTint="#234062"
+            android:src="@drawable/ic_add" />
+
+    </FrameLayout>
+
+
 </LinearLayout>
