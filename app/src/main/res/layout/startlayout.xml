@@ -35,7 +35,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginLeft="10dp"
             android:layout_weight="9"
-
+            android:background="#10ffffff"
             android:text="혼밥은 싫어 !"
             android:textAlignment="center"
             android:textColor="#000000"
@@ -70,7 +70,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginLeft="10dp"
             android:layout_weight="9"
-
+            android:background="#10ffffff"
             android:text="자취생들 모여 !"
             android:textAlignment="center"
             android:textColor="#000000"

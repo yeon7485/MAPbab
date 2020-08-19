@@ -65,6 +65,7 @@ public class MapsNaverActivity extends AppCompatActivity implements OnMapReadyCa
         uiSettings.setZoomGesturesEnabled(true);
         uiSettings.setCompassEnabled(true);
         uiSettings.setLocationButtonEnabled(true);
+        uiSettings.setZoomControlEnabled(true);
 
         naverMap.setLocationSource(locationSource);
         naverMap.setLocationTrackingMode(LocationTrackingMode.Follow);
