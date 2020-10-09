@@ -42,7 +42,7 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.MyViewHolder> 
     // Provide a suitable constructor (depends on the kind of dataset)
     public ChatAdapter(List<ChatData> myDataset, Context context, String myNickName) {
         mDataset = myDataset;
-        this.myNickName=myNickName;
+        this.myNickName = myNickName;
     }
 
     // Create new views (invoked by the layout manager)

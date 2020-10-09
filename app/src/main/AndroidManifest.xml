@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.kplo.mapbab">
+
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
@@ -18,15 +19,20 @@
             android:name="com.naver.maps.map.CLIENT_ID"
             android:value="y2018cv8fp" />
 
+        <activity android:name=".SignupActivity">
 
-        <activity android:name=".PostViewActivity"></activity>
-        <activity android:name=".NewPostActivity"></activity>
-        <activity android:name=".MapsNaverActivity">
+        </activity>
+        <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>>
+        <activity android:name=".PostViewActivity" />
+        <activity android:name=".NewPostActivity" />
+        <activity android:name=".ListActivity">
+
         </activity>
     </application>
 

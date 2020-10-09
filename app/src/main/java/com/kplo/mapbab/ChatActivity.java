@@ -67,7 +67,6 @@ public class ChatActivity extends AppCompatActivity {
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         myRef = database.getReference("message");
 
-
         myRef.addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
